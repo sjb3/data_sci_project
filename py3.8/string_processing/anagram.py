@@ -3,10 +3,11 @@
 s1 = 'fairy tales'
 s2 = 'rail safety'
 
+# normalize
 s1 = s1.replace(' ', '').lower()
 s2 = s2.replace(' ', '').lower()
-
-print(sorted(s1) == sorted(s2))
+# n log n time
+# print(sorted(s1) == sorted(s2))
 
 
 def is_anagram(s1, s2):

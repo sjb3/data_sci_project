@@ -14,11 +14,13 @@
 
 # More efficient way using hash table
 
-def fibo(n, calculated = {1:0, 2:1, 3:1}):
-    if n in calculated:
-        return calculated[n]
 
-    calculated[n] = (fibo(n-1, calculated) + fibo(n-2, calculated))
-    return calculated[n]
+def fibo(n, ht={1: 0, 2: 1, 3: 1}):
+    if n in ht:
+        return ht[n]
+
+    ht[n] = (fibo(n-1, ht) + fibo(n-2, ht))
+    return ht[n]
+
 
 print(fibo(4))

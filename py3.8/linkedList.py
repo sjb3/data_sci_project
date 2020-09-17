@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 class Solution:
     def display(self, head):
         current = head

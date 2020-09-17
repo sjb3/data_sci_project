@@ -13,9 +13,10 @@
 
 def loops(n):
     if n < 1:
-        return Non
+        return None
 
     for i in range(1, 11):
         print('{} x {} = {}'.format(n, i, n*i))
+
 
 loops(2)

@@ -9,10 +9,17 @@ A = [-14, -10, 2, 108, 108, 243, 285, 285, 285, 288]
 target = 108
 
 
-# def find_simple(A, target):
-#     for i in range(len(A)):
-#         if A[i] == target:
-#             return i
-#     return None
+def find_simple(A, target):
+    # for i in range(len(A)):
+    #     if A[i] == target:
+    #         return i
+    # return None
 
-def find_bst(A, target):
+    # OR
+
+    for i in A:
+        if i == target:
+            return A.index(i)
+
+
+print(find_simple(A, 108))
